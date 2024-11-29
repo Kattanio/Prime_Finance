@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="menu">
+        <nav>
+            <ul class="nav-list">
+                <div id="logo">
+                    <a href="simulador.html">
+                        <img src="img/logosite.png" alt="logo do site" width="320px" height="85px">
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+   
+    <div class="secao-cinza">
+        <div class="financiamento">
+          <p class="titulo">
+            Descubra como é simples<br>
+            planejar o financiamento
+            do seu
+            <br> veículo ideal!
+          </p>
+          <p class="descricao">
+            Encontre as melhores opções de financiamento<br>
+            com parcelas feitas sob medida para você.
+          </p>
+          <button class="botao-simular">Simular</button>
+        </div>
+
+        <script>
+            // Seleciona o botão e adiciona o evento de clique
+            document.querySelector(".botao-simular").addEventListener("click", function() {
+                window.location.href = "simulador.html";
+            });
+        </script>
+
+      </div>
+
+      <div id="info2">
+       
+      
+        <!-- Primeira Linha -->
+        <div class="cards-section2">
+            <h1>Como Funciona o Financiamento de Veículos?</h1>
+          <div class="card-container2">
+            <div class="card2">
+              <img src="img/carro-compacto.png">
+              <div class="card-content2">
+                <h2>Informe os Dados do Veículo</h2>
+                <p>Insira o valor do veículo que deseja financiar, seja ele novo ou usado, para iniciar a simulação.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card-container2">
+            <div class="card2">
+              <img src="img/botao-play.png">
+              <div class="card-content2">
+                <h2>Configure a Simulação</h2>
+                <p>Defina os parâmetros do financiamento, como o valor da entrada, a taxa de juros e o número de parcelas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Segunda Linha -->
+        <div class="cards-section last-row2">
+          <div class="card-container2">
+            <div class="card2">
+              <img src="img/lupa.png">
+              <div class="card-content2">
+                <h2>Simule Quantas Vezes Quiser</h2>
+                <p>Ajuste os valores e condições para encontrar a melhor opção que se encaixa no seu orçamento.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card-container2">
+            <div class="card2">
+              <img src="img/lapis.png">
+              <div class="card-content2">
+                <h2>Assinatura do Contrato</h2>
+                <p>Após simular, você poderá buscar uma instituição financeira para formalizar o contrato com as condições desejadas.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card-container2">
+            <div class="card2">
+              <img src="img/dolar.png">
+              <div class="card-content2">
+                <h2>Pagamento das Parcelas</h2>
+                <p>Organize-se com base nas parcelas simuladas e acompanhe o custo total do financiamento planejado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+        <div id="info3">
+            <section class="vantagens3">
+                <h1>Vantagens</h1>
+                <p>Há diversas vantagens em utilizar nosso simulador de financiamento de veículos.</p>
+                <div class="cards-container3">
+                  <div class="card3">
+                    <div class="icon3">⚡</div>
+                    <h2>Velocidade</h2>
+                    <p>
+                      Calcule as parcelas do financiamento em poucos cliques, com uma interface simples que facilita a visualização imediata dos resultados.
+                    </p>
+                  </div>
+                  <div class="card3">
+                    <div class="icon3">⚙️</div>
+                    <h2>Personalização</h2>
+                    <p>
+                      Customize o financiamento conforme suas necessidades: escolha o valor da entrada, o número de parcelas e veja como isso afeta o valor final.
+                    </p>
+                  </div>
+                  <div class="card3">
+                    <div class="icon3">🔍</div>
+                    <h2>Transparência</h2>
+                    <p>
+                      Todas as taxas de juros, prazos e custos estão claramente visíveis, permitindo uma decisão informada e sem surpresas no contrato final.
+                    </p>
+                  </div>
+                </div>
+              </section>
+        </div>        
+    </div>
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+    <script>
+      // Seleciona o botão
+      const scrollToTopButton = document.getElementById("scrollToTop");
+    
+      // Função para rolar para o topo
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    
+      // Monitora o scroll da página
+      window.addEventListener("scroll", () => {
+        // Exibe o botão se o usuário estiver no final da página
+        if (window.scrollY > window.innerHeight * 1.1) { // Mostra o botão após 50% da altura da tela
+          scrollToTopButton.style.display = "flex";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      });
+    </script>
+    
+
+    <div id="rodape">
+        <footer>
+            <center>
+                <h3 class="fonterodape"> Prime Finance - Financiamento de Veículos</h3>
+                <h4 class="fonterodape"> Interdisciplinar da Etec Carapicuíba elaborado pelo 2° ano de Desenvolvimento de Sistemas<br>
+                &copy;CPS - Centro Paula Souza - 2024 </h4>
+            </center>
+        </footer>
+    </div>
+</body>
+</html>
